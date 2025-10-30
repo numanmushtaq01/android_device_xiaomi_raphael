@@ -8,7 +8,7 @@
 
     <overlay
         android:isStatic="true"
-        android:priority="250"
+        android:priority="200"
         android:targetPackage="lineageos.platform" />
 
 </manifest>
