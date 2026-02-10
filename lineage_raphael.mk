@@ -13,6 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
