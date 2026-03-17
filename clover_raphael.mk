@@ -8,17 +8,22 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
-$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_raphael
+#clover flags
+CLOVER_BUILDTYPE := OFFICIAL
+CLOVER_MAINTAINER := NumaanMushtaq
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+
+PRODUCT_NAME := clover_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
