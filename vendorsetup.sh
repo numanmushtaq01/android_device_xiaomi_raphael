@@ -57,7 +57,7 @@ section "Cloning device tree"
 
 clone_if_missing \
 https://github.com/numanmushtaq01/android_device_xiaomi_sm8150-common.git \
-lineage-23.2 \
+LOS-23.2 \
 device/xiaomi/sm8150-common
 
 
@@ -82,7 +82,7 @@ divider
 
 clone_if_missing \
 https://github.com/numanmushtaq01/android_kernel_xiaomi_sm8150.git \
-16.ksun \
+16.2 \
 kernel/xiaomi/sm8150
 
 
@@ -102,6 +102,34 @@ https://github.com/numanmushtaq01/hardware_dolby.git \
 16.dolby \
 hardware/dolby
 
+
+# Lieca cam
+
+divider
+section "Cloning Lieca cam repos"
+divider
+
+clone_if_missing \
+https://gitlab.com/crdroidandroid/android_device_xiaomi_miuicamera.git \
+16.0-raphael \
+device/xiaomi/miuicamera
+
+clone_if_missing \
+https://gitlab.com/crdroidandroid/proprietary_vendor_xiaomi_miuicamera.git \
+16.0-raphael \
+vendor/xiaomi/miuicamera
+
+
+# Bcr
+
+divider
+section "Cloning Bcr repo"
+divider
+
+clone_if_missing \
+https://github.com/bulla0x/vendor_bcr.git \
+main \
+vendor/bcr
 
 # Done
 
