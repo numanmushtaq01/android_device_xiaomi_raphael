@@ -57,7 +57,7 @@ section "Cloning device tree"
 
 clone_if_missing \
 https://github.com/numanmushtaq01/android_device_xiaomi_sm8150-common.git \
-lineage-23.2 \
+Clover-16 \
 device/xiaomi/sm8150-common
 
 
@@ -82,7 +82,7 @@ divider
 
 clone_if_missing \
 https://github.com/numanmushtaq01/android_kernel_xiaomi_sm8150.git \
-16.ksun \
+16.2-noksu \
 kernel/xiaomi/sm8150
 
 
@@ -93,7 +93,7 @@ section "Setting up hardware repos"
 divider
 
 clone_if_missing \
-https://github.com/crdroidandroid/android_hardware_xiaomi.git \
+https://github.com/numanmushtaq01/android_hardware_xiaomi.git \
 16.0-raphael \
 hardware/xiaomi
 
@@ -102,6 +102,39 @@ https://github.com/numanmushtaq01/hardware_dolby.git \
 16.dolby \
 hardware/dolby
 
+
+# Lieca cam
+
+divider
+section "Cloning Lieca cam repos"
+divider
+
+clone_if_missing \
+https://gitlab.com/crdroidandroid/android_device_xiaomi_miuicamera.git \
+16.0-raphael \
+device/xiaomi/miuicamera
+
+clone_if_missing \
+https://gitlab.com/crdroidandroid/proprietary_vendor_xiaomi_miuicamera.git \
+16.0-raphael \
+vendor/xiaomi/miuicamera
+
+
+# Game bar & Bcr
+
+divider
+section "Cloning GameBar & Bcr repos"
+divider
+
+clone_if_missing \
+https://github.com/kenway214/packages_apps_GameBar.git \
+lineage-23.2 \
+packages/apps/GameBar
+
+clone_if_missing \
+https://github.com/bulla0x/vendor_bcr.git \
+main \
+vendor/bcr
 
 # Done
 
